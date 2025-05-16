@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  background-color: black;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  background-color: gray;
+  align-items: center;
+}
+
+.attributes {
+  width: 50%;
+  background-color: white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.full div:last-child {
+  width: 100%;
+  border: 2px solid red;
+}
