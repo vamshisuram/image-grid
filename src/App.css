@@ -7,12 +7,12 @@
 
 .App {
   background-color: black;
+  display: flex;
 }
 
 .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 5px;
   width: 50%;
   background-color: gray;
   align-items: center;
@@ -20,15 +20,15 @@
 
 .attributes {
   width: 50%;
-  background-color: white;
+  background-color: steelblue;
 }
 
 .full-width {
-  width: 100%;
+  grid-column: span 2;
 }
 
 .half-width {
-  width: 50%;
+  grid-column: span 1;
 }
 
 img {
@@ -38,6 +38,6 @@ img {
 }
 
 .full div:last-child {
-  width: 100%;
+  grid-column: span 2;
   /* border: 2px solid red; */
 }
