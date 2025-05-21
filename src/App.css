@@ -32,11 +32,12 @@
 }
 
 img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .full div:last-child {
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }

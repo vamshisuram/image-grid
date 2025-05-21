@@ -15,16 +15,17 @@ function App() {
 
     const lastImgClass = images.length % 3 === 1 ? "full" : "";
     // const hasPortrait = images.some((image) => image.aspectRatio < 1);
+    const defaultClass = images.length < 3 ? "full" : "";
     const imageElements = images.map((image, index) => {
         const klass = (index + 1) % 3 === 0 ? "full-width" : "half-width";
-        const imgClass = image.aspectRatio === 1 ? "square" : "portrait";
         return (
-            <div key={index} className={`image-container ${klass}`}>
-                <img
-                    src={image.url}
-                    alt={`Image ${index + 1}`}
-                    className={imgClass}
-                />
+            <div
+                key={index}
+                className={`imageContainer ${
+                    defaultClass ? defaultClass : klass
+                }`}
+            >
+                <img src={image.url} alt={`Image ${index + 1}`} />
             </div>
         );
     });
